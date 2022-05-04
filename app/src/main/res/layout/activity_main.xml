@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".ui.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/black"
+                android:paddingHorizontal="@dimen/margin10"
+                android:id="@+id/rl_app_bar">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_header">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/back"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/iv_back"
+                        app:tint="@color/white">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tvToolbarText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin20"
+                        android:layout_toRightOf="@+id/iv_back"
+                        android:gravity="center_vertical"
+                        android:text="@string/title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/search"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:id="@+id/iv_search"
+                        app:tint="@color/white">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/rl_search">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_search"
+                        android:hint="Search"
+                        android:layout_toLeftOf="@+id/iv_close"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white">
+
+                    </EditText>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cancel"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:id="@+id/iv_close"
+                        app:tint="@color/white">
+
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_list"
+                android:layout_below="@+id/rl_app_bar"
+                android:layout_marginHorizontal="@dimen/margin10"
+
+                tools:itemCount="10"
+                tools:listitem="@layout/item_list">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@drawable/shadow"
+                android:layout_below="@+id/rl_app_bar"
+                android:visibility="visible"
+                android:id="@+id/view1">
+
+            </View>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

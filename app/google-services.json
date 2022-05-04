@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "784517032058",
+    "firebase_url": "https://temperature-e0b8b.firebaseio.com",
+    "project_id": "temperature-e0b8b",
+    "storage_bucket": "temperature-e0b8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784517032058:android:79d2eb6a331b70b0d473c3",
+        "android_client_info": {
+          "package_name": "com.blooddonners"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784517032058-sspupefkb2q0c1t2nr0girfkj1hjpqde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDowwL-W42cGwufcSaOPeTUx5WIg5LPaak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784517032058-sspupefkb2q0c1t2nr0girfkj1hjpqde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784517032058:android:e86e6be4cd7a99c3d473c3",
+        "android_client_info": {
+          "package_name": "com.example.diagonal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784517032058-sspupefkb2q0c1t2nr0girfkj1hjpqde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDowwL-W42cGwufcSaOPeTUx5WIg5LPaak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784517032058-sspupefkb2q0c1t2nr0girfkj1hjpqde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
